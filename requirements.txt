@@ -8,4 +8,3 @@ aiohttp==3.13.3
 pytz==2025.2
 psutil==7.2.1
 ffmpeg-python
-ffmpeg
