@@ -6,7 +6,7 @@ from helper.utils import metadata_text
 
 # ===== DEFAULT METADATA (from environment variables) =====
 DEFAULT_AUTHOR = os.getenv("DEFAULT_AUTHOR", "Vist our Telegram channel @Dramafilez")
-DEFAULT_TITLE = os.getenv("DEFAULT_TITLE", "Encoded by @Dramafilez")
+DEFAULT_TITLE = os.getenv("DEFAULT_TITLE", "Vist our Telegram channel @Dramafilez")
 DEFAULT_VIDEO_TITLE = os.getenv("DEFAULT_VIDEO_TITLE", "Vist our Telegram channel @Dramafilez")
 DEFAULT_AUDIO_TITLE = os.getenv("DEFAULT_AUDIO_TITLE", "@Dramafilez")
 DEFAULT_SUBTITLE_TITLE = os.getenv("DEFAULT_SUBTITLE_TITLE", "@Dramafilez")
