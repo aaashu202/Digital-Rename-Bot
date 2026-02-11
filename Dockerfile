@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 # -------- Set default metadata environment variables --------
 ENV DEFAULT_AUTHOR="Vist our Telegram channel @Dramafilez"
-ENV DEFAULT_TITLE="Encoded by @Dramafilez"
+ENV DEFAULT_TITLE="Vist our Telegram channel @Dramafilez"
 ENV DEFAULT_VIDEO_TITLE="Vist our Telegram channel @Dramafilez"
 ENV DEFAULT_AUDIO_TITLE="@Dramafilez"
 ENV DEFAULT_SUBTITLE_TITLE="@Dramafilez"
