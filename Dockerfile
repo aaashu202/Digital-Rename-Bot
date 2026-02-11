@@ -1,19 +1,22 @@
-# Use the official Python image
-FROM python:3.9-slim-buster
+# Use a supported Debian base (Bookworm)
+FROM python:3.9-slim-bookworm
 
-RUN apt-get update -qq && apt-get -y install ffmpeg
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends ffmpeg && \
+    rm -rf /var/lib/apt/lists/*
 
-# Set the working directory in the container
+# Set working directory
 WORKDIR /app
 
-# Copy the dependencies file to the working directory
+# Copy only requirements first (better caching)
 COPY requirements.txt .
 
-# Install any needed dependencies specified in requirements.txt
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the application code to the working directory
+# Copy application code
 COPY . .
 
-# Command to run the application
+# Run the application
 CMD ["python", "bot.py"]
